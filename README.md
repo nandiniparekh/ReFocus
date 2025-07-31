@@ -13,7 +13,6 @@ In a world where:
 
 focuSync aims to build an intelligent, behavior-based system that understands when you're focused or distracted — and helps you take back control.
 
----
 
 ## 🧠 What It Does
 
@@ -25,7 +24,6 @@ focuSync uses **computer vision** and a **recurrent neural network (LSTM)** to c
 
 This enables real-time or near real-time feedback to help users understand and manage their attention levels.
 
----
 
 ## 🔬 Methodology
 
@@ -37,7 +35,6 @@ The focuSync system follows a modular pipeline architecture:
 Video Input → OpenFace 3.0 Feature Extraction → Sequential Data Processing → LSTM Model → Focus State Prediction → Annotated Output
 ```
 
----
 
 ### 🧊 OpenFace 3.0 Integration
 
@@ -48,7 +45,6 @@ We leverage OpenFace 3.0 for sophisticated facial analysis:
 - Head pose estimation
 - Gaze direction tracking
 
----
 
 ### 🧪 Feature Extraction Implementation
 
@@ -84,8 +80,6 @@ def estimate_head_pose(landmarks, image_shape):
     return pitch, yaw, roll
 ```
 
----
-
 ### 🔄 LSTM Model Architecture
 
 Implemented in PyTorch:
@@ -109,7 +103,6 @@ class LSTM(nn.Module):
         return out
 ```
 
----
 
 ### ⚙️ Processing Pipeline
 
@@ -119,7 +112,6 @@ class LSTM(nn.Module):
 4. **Focus Classification** – Applying the trained model to detect focus states  
 5. **Output Annotation** – Visualizing results on the original video  
 
----
 
 ### 🛠️ Implementation Environment
 
@@ -129,7 +121,6 @@ class LSTM(nn.Module):
 - **OpenFace 3.0** for facial analysis
 - **Google Colab** for accessible deployment
 
----
 
 ### ⚡ Efficient Frame-by-Frame Processing
 
@@ -140,8 +131,6 @@ class LSTM(nn.Module):
 
 > **Note:** While the current setup processes pre-recorded videos, future phases aim to support real-time streaming applications.
 
----
-
 ## 💡 Design Philosophy
 
 Unlike assumption-based or one-size-fits-all focus tools, focuSync is:
@@ -149,7 +138,6 @@ Unlike assumption-based or one-size-fits-all focus tools, focuSync is:
 - ✅ **Automatic (No manual input required)**
 - ✅ **Personalized and Transparent**
 
----
 
 ## 🔐 Ethical AI Principles
 
@@ -165,7 +153,6 @@ We take AI responsibility seriously. Here’s how:
   - Control for users over what data is collected or deleted
   - Inclusive and diverse training data
 
----
 
 ## Contributors
 
